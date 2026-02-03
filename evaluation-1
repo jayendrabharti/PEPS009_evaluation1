@@ -1,5 +1,3 @@
-
-
 Question 1: Throttled Click Counter (Medium Level)
 Problem Statement
 
@@ -18,6 +16,7 @@ The UI should always display the correct count value.
 
 Starter HTML
 <button id="btn">Click</button>
+
 <p id="count">0</p>
 
 Constraints
@@ -35,9 +34,6 @@ Notes
 The button should remain clickable, but extra clicks should not affect the count.
 
 The solution should demonstrate proper control over execution timing.
-
-
-
 
 Question 2:Live Character Counter
 Problem Statement
@@ -57,6 +53,7 @@ When the count is within the limit, the color should return to normal.
 
 Starter HTML
 <textarea id="text"></textarea>
+
 <p id="char-count">0 / 100</p>
 
 Constraints
@@ -75,8 +72,6 @@ Clearing text resets the count.
 
 Color change reflects whether the limit is exceeded.
 
-
-
 Question 3: Implement once() Function (Closures)
 Problem Statement
 
@@ -86,7 +81,7 @@ Once the function has been executed for the first time, all subsequent calls sho
 
 Expected Behavior
 function greet() {
-  console.log("Hello");
+console.log("Hello");
 }
 
 const greetOnce = once(greet);

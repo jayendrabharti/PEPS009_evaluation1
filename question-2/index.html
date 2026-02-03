@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. Live Character Counter</title>
+    <style>
+      body {
+        background-color: rgb(53, 181, 255);
+        height: 100dvh;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        border-radius: 10px;
+        font-size: large;
+        padding: 10px 20px;
+        transition-duration: 100ms;
+      }
+      button:active {
+        scale: 0.9;
+      }
+      span {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Live Character Counter</h1>
+    <textarea id="my-text" placeholder="Enter Text"></textarea>
+    <button id="clear-btn">Clear</button>
+    <span id="char-count">0 characters</span>
+    <script src="script.js"></script>
+  </body>
+</html>
