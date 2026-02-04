@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     clearBtn.addEventListener('click', clear);
 
-    textArea.addEventListener('input', (e) => {
-        const count = e.target.value.length;
+    textArea.addEventListener('input', () => {
+        const count = textArea.value.length;
         setCount(count);
     })
 });
